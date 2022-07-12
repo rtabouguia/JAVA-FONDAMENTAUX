@@ -63,4 +63,18 @@ public class Avion {
         //return fabricant+" "+modele;
         return String.format("%s %s",fabricant,modele);
     }
+
+    public String toString(){
+        return String.format("fabricant: ",fabricant);
+    }
+//On compare deux objets avec equals et non avec ==
+// (== compare les références et equals compare les valeurs)
+    public boolean equals(Avion avion){
+        if(avion ==null){
+            return false;
+        }
+        return this.fabricant==avion.fabricant && this.modele==avion.modele && this.nombreSieges==avion.nombreSieges
+                && this.couleur==avion.couleur;
+    }
+
 }
