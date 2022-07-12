@@ -1,6 +1,6 @@
 package poo.Exercices;
 
-public class Main {
+public class MainRectangle {
     public static void main(String[] args) {
         Rectangle R1 =new Rectangle();
         R1.setLongueur(200);
