@@ -13,13 +13,14 @@ public class MainSouris {
         System.out.println(sourisCLonee.toString());
 
         Souris sourisBlanche = new Souris(50, "blanche", 2, false);   //souris blanche creee
-        sourisBlanche.setEsperanceVie(sourisBlanche.getESPERANCE_VIE_DEFAUT());
         System.out.println(sourisBlanche);
+
         Souris sourisGrise =new Souris(45, "grise", 0, false);  //souris grise creee
-        sourisGrise.setEsperanceVie(sourisGrise.getESPERANCE_VIE_DEFAUT());
         System.out.println(sourisGrise);
+
         Souris sourisGriseClonee = new Souris(sourisGrise);     //souris grise clonee
         System.out.println(sourisGriseClonee);
+
         sourisBlanche.evolue();                 //souris blanche evolue de 2 à 36 mois
         System.out.println(sourisBlanche);
 

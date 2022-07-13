@@ -21,9 +21,7 @@ public class Souris {
     public boolean isClonee() {
         return clonee;
     }
-    public int getESPERANCE_VIE_DEFAUT() {
-        return ESPERANCE_VIE_DEFAUT;
-    }
+
     public int getEsperanceVie() {
         return esperanceVie;
     }
@@ -42,7 +40,6 @@ public class Souris {
     public void setClonee(boolean clonee) {
         this.clonee = clonee;
     }
-
     public void setEsperanceVie(int esperanceVie) {
         this.esperanceVie = esperanceVie;
     }
@@ -53,6 +50,7 @@ public class Souris {
         this.couleur=couleur;
         this.age=age;
         this.clonee=clonee;
+        this.esperanceVie =ESPERANCE_VIE_DEFAUT;
     }
     public Souris(){
         this.age=0;
@@ -62,7 +60,7 @@ public class Souris {
     public Souris(Souris sourisOrigine){
         this.poids =sourisOrigine.poids;
         this.age =sourisOrigine.age;
-        this.esperanceVie=(sourisOrigine.esperanceVie*3)/4;
+        this.esperanceVie=(sourisOrigine.esperanceVie*4)/5;
         this.clonee =true;
         this.couleur=sourisOrigine.couleur;
     }
@@ -81,7 +79,7 @@ public class Souris {
     }
 
     public void vieillir(){
-        this.age =this.age+1;
+        this.age++;
         if(clonee ==true && this.age >(this.esperanceVie/2)){
             this.couleur="verte";
         }
@@ -89,8 +87,8 @@ public class Souris {
 
     public void evolue(){
         for(int i =this.age; i<this.esperanceVie; i++){
-            this.age =i;
-        }vieillir();
+              this.vieillir();
+        }
     }
 
 }

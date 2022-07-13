@@ -6,7 +6,7 @@ public class MainPatient {
         zero.setName("Raisa");
 
         //Afficher les données du patient
-        System.out.println(zero.imc(zero.getPoids(), zero.getTaille()));
+        //System.out.println(zero.imc(zero.getPoids(), zero.getTaille()));
         System.out.println(zero.toString());
         System.out.println("Taille du patient: "+zero.getTaille());
         System.out.println("Poids du patient: "+zero.getPoids());
