@@ -1,6 +1,6 @@
 package poo.heritage.Exercices;
 
-public class Etudiant extends Personnel{
+public class Etudiant extends Personne {
     private String type;
     private float moyenne;
     private final float NOTE_PAR_DEFAUT =0;

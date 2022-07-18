@@ -1,12 +1,12 @@
 package poo.heritage.Exercices;
 
-public class Personnel {
+public class Personne {
     private String nom ;
     private String nomSection;
     private int anneeArrivee;
     private String poste;
 
-    public Personnel(String nom, String nomSection, int anneeArrivee, String poste) {
+    public Personne(String nom, String nomSection, int anneeArrivee, String poste) {
         this.nom = nom;
         this.nomSection = nomSection;
         this.anneeArrivee = anneeArrivee;
@@ -27,7 +27,7 @@ public class Personnel {
 
 
     //cette methode retourne vrai si la personne est un étudiant
-    public boolean estEtudiant(Personnel lambda){
+    public boolean estEtudiant(Personne lambda){
          return lambda.poste.equals("Etudiant");
     }
 }

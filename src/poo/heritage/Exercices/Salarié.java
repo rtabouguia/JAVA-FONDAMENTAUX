@@ -1,6 +1,6 @@
 package poo.heritage.Exercices;
 
-public class Salarié extends Personnel {
+public class Salarié extends Personne {
     public float getSalaire() {
         return salaire;
     }

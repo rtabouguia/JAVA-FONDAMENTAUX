@@ -3,9 +3,9 @@ package poo.heritage.Exercices;
 import java.util.ArrayList;
 
 public class Direction {
-    ArrayList<Personnel> listePersonnesCLBIT = new ArrayList<>();
+    ArrayList<Personne> listePersonnesCLBIT = new ArrayList<>();
 
-    public void addPersonne(Personnel abc){
+    public void addPersonne(Personne abc){
         listePersonnesCLBIT.add(abc);
       }
       public int nbreTotalPersonneCLBIT(){
@@ -13,7 +13,7 @@ public class Direction {
     }
     public int nbreTotalEtudiant(){
         int totalEtudiant=0;
-        for ( Personnel entry: listePersonnesCLBIT){
+        for ( Personne entry: listePersonnesCLBIT){
             totalEtudiant= entry.getPoste().equals("Etudiant") ?totalEtudiant+1:totalEtudiant;
                    }
         return totalEtudiant;
@@ -28,7 +28,7 @@ public class Direction {
     public String toString(){
         String infos ="";
 
-        for ( Personnel entry: listePersonnesCLBIT){
+        for ( Personne entry: listePersonnesCLBIT){
             infos = String.format("nom :%s,\n section: %s,\n annee: %d\n",
                     entry.getNom(), entry.getNomSection(), entry.getAnneeArrivee());
             if (entry.getPoste().equals("Etudiant")) {
